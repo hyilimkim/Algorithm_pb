@@ -1,4 +1,5 @@
-a=input().lower()
+# a=input().lower()
+a="aaadfd"
 if len(a)<2:
     print(a.upper())
     exit()
@@ -9,7 +10,9 @@ for i in a:
         l[i]=on+1
     else:
         l[i]=1
+print(l)
 l=(sorted(l.items(),key=lambda x:x[1],reverse=True))
+print(l)
 if (l[0][1] in l[1]) :
     print("?")
 else:
